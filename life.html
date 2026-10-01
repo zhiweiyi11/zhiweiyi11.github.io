@@ -1,0 +1,14 @@
+---
+layout: page
+title: 生活记录
+permalink: /life/
+---
+<p>读书、旅行与运动，让学习之外的日子也有迹可循。</p>
+{% assign posts = site.posts | where_exp: "post", "post.categories contains 'life'" %}
+<ul>
+{% for post in posts %}
+  <li><time>{{ post.date | date: "%Y-%m-%d" }}</time> · <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+{% else %}
+  <li>暂时没有文章。</li>
+{% endfor %}
+</ul>

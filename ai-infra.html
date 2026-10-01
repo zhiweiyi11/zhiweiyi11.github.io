@@ -1,0 +1,14 @@
+---
+layout: page
+title: AI Infra
+permalink: /ai-infra/
+---
+<p>论文阅读、开源项目与系统实践。</p>
+{% assign posts = site.posts | where_exp: "post", "post.categories contains 'ai-infra'" %}
+<ul>
+{% for post in posts %}
+  <li><time>{{ post.date | date: "%Y-%m-%d" }}</time> · <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+{% else %}
+  <li>第一篇技术笔记正在整理中。</li>
+{% endfor %}
+</ul>

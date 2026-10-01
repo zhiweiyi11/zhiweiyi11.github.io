@@ -1,0 +1,28 @@
+title: "Michael 的学习笔记"
+description: "AI Infra · 论文阅读 · 开源实践 · 生活记录"
+author: "Michael"
+lang: zh-CN
+timezone: Asia/Shanghai
+# 暂按当前已连接账号填写；如果换账号，请同时修改这两项。
+url: "https://zhiweiyi11.github.io"
+github_username: zhiweiyi11
+baseurl: ""
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+permalink: /posts/:year/:month/:day/:title/
+show_excerpts: true
+header_pages:
+  - ai-infra.html
+  - life.html
+  - archives.html
+  - about.md
+minima:
+  date_format: "%Y-%m-%d"
+exclude:
+  - README.md
+  - guides
+  - templates
+  - scripts
+  - AGENTS.md
